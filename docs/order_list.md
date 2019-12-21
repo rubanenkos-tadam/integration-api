@@ -2,6 +2,8 @@
 
 Структура запроса соответствует [Протоколу](docs/request.md)
 
+---
+
 ### Body json object
 
 Param | Value
@@ -67,6 +69,8 @@ Value | Description
 3 | Клиентское приложение
 6 | Водитель
 7 | Integration API
+
+---
 
 ### Пример
 
