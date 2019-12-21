@@ -9,7 +9,7 @@ https://dev.opentadam.com/api/integration/rpc
 Param | Sample | Man/Opt | Type | Description
 ----- | ------ | ------- | ---- | -----------
 Authorization | HJAsdhjashj328238asd | man | string | API-key
-Accept-Language | en-US | opt | string | Локаль, согластно стандарта RFC 2616(https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4)<br> Используется для локализации сообщений.
+Accept-Language | en-US | opt | string | Локаль, согласно стандарта RFC 2616(https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4)<br> Используется для локализации сообщений.
 
 
 ### Body json object
