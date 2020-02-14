@@ -11,3 +11,4 @@
 * [Поиск адресов](docs/address_find.md)
 * [Создание заказа](docs/order_submit.md)
 * [Отмена заказа](docs/order_cancel.md)
+* [Оценка стоимости заказа](docs/order_estimate.md)
