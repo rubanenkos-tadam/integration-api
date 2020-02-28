@@ -7,7 +7,7 @@
 Param | Value
 ----- | ------
 method | Orders.submit
-version | 1.0
+version | 1.1
 params | json
 
 ## Params
@@ -18,6 +18,7 @@ fareId | man | integer | Идентификатор клиентского та�
 phone | man | string | Телефон клиента
 route | man | (ClientAddress)(docs/objects/ClientAddress.md) / array json | Список адресов (маршрут поездки)
 time | opt | [OffsetDateTime](docs/objects/OffsetDateTime.md) / string | Время заказа (отсутствует, если текущий)
+fixCost | opt | numeric | Стоимость заказа. В течении поездки стоимость пожет измениться только на время простоя, если водитель нажмет кнопку **Простой** или клиент выйдет с опозданием.
 
 ### Пример
 
@@ -26,6 +27,7 @@ time | opt | [OffsetDateTime](docs/objects/OffsetDateTime.md) / string | Вре�
   "method": "Orders.submit",
   "version": "1.0",
   "params": {
+    "fixCost": 12.56,
     "fareId": 1534,
     "phone": "+375290123456",
     "route": [{
