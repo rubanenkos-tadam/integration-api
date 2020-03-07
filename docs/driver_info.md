@@ -50,7 +50,7 @@ phone | man | string | Телефон
 carBrand | man | string | Бренд автомобиля
 carAlias | man | string | Алиас для Brand + Model.
 carModel | man | string | Марка автомобиля
-carRegnum | man | string | регистрационный номер автомобиля
+carRegnum | man | string | Регистрационный номер автомобиля
 carColor | man | string | Цвет автомобиля
 position | opt | GpsPosition / json | Координаты, назначенного автомобиля
 
