@@ -51,7 +51,7 @@ carBrand | man | string | Бренд автомобиля
 carAlias | man | string | Алиас для Brand + Model.
 carModel | man | string | Марка автомобиля
 carRegnum | man | string | Регистрационный номер автомобиля
-carColor | man | string | Цвет автомобиля. Название ввета будет локализовано в соответствии со значением заголовка "Accept-Language"
+carColor | man | string | Цвет автомобиля. Название цвета будет локализовано в соответствии со значением заголовка "Accept-Language"
 position | opt | GpsPosition / json | Координаты, назначенного автомобиля
 
 #### GpsPosition / json
