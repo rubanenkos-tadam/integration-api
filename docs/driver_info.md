@@ -77,7 +77,7 @@ lon | man | number | Долгота
       "carAlias": "Audi",
       "carModel": "A4 Avant (8E)",
       "carRegnum": "7475IH1",
-      "carColor": "Blue",
+      "carColor": "Синяя",
       "position": {
            "lat": 52.33234,
            "lon": 24.56786
