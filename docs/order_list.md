@@ -44,7 +44,7 @@ Param  | Man/Opt | Type | Description
 -----  | ------- | ---- | -----------
 id | nam | integer | Идентификатор заказа
 status | man | OrderStatus / integer | Статус заказа
-phone | man | integer | Телефон клиента
+phone | man | string | Телефон клиента
 route | man | [ClientAddress](docs/objects/ClientAddress.md) / array json | Маршрут
 time | opt | [OffsetDateTime](docs/objects/OffsetDateTime.md) / string | Время заказа (отсутствует, если текущий)
 created | man | [OffsetDateTime](docs/objects/OffsetDateTime.md) / string | Время создания заказа
