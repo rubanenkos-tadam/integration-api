@@ -9,7 +9,7 @@
 Param | Value
 ----- | ------
 method | Orders.getList
-version | 1.0
+version | 11
 params | json
 
 ## Params
@@ -42,13 +42,22 @@ result | man | json | Объект
 
 Param  | Man/Opt | Type | Description
 -----  | ------- | ---- | -----------
-id | nam | integer | Идентификатор заказа
+id | nam | int64 | Идентификатор заказа
 status | man | OrderStatus / integer | Статус заказа
 phone | man | string | Телефон клиента
 route | man | [ClientAddress](docs/objects/ClientAddress.md) / array json | Маршрут
 time | opt | [OffsetDateTime](docs/objects/OffsetDateTime.md) / string | Время заказа (отсутствует, если текущий)
 created | man | [OffsetDateTime](docs/objects/OffsetDateTime.md) / string | Время создания заказа
 source | man | OrderSource / integer | Источник заказа
+options | opt | array / int64 / массив ИД опций заказа
+fixCost | opt | number | Возвращается, только если стоимость была зафиксирована
+paymentMethod | man | string | Тип оплаты. Возможные значения: **"cashless" | "credit_card" | "cash"**. "cashless" - контрагагентский (B2B) заказ.
+comment | opt | string | Комментарий к заказу
+check | opt | CheckItem / json |
+contractorCheck | opt | CheckItem / json |
+estimatedCheck | opt | CheckItem / json |
+tariffId | man | int64 | ИД тарифа. В случае, если заказ B2B, то возвращает тариф, по которому работает водитель.
+contractorTariffId | int64 | ИД контрагентского (B2B) тарифа
 
 ### OrderStatus / integer
 
