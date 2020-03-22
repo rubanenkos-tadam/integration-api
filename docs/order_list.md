@@ -23,7 +23,7 @@ dispatchingServiceId | 123 | man | integer | Идентификатор дисп
 ```
 {
   "method": "Orders.getList",
-  "version": "1.0",
+  "version": "11",
   "params": {
     "dispatchingServiceId": 101
   }
