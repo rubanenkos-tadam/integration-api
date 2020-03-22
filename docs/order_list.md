@@ -57,7 +57,7 @@ check | opt | CheckItem / json | Расшифровка фактического
 contractorCheck | opt | CheckItem / json | Расшифровка чека для контрагента
 estimatedCheck | opt | CheckItem / json | Расшифровка предварительного чека
 tariffId | man | int64 | ИД тарифа. В случае, если заказ B2B, то возвращает тариф, по которому работает водитель.
-contractorTariffId | int64 | ИД контрагентского (B2B) тарифа
+contractorTariffId | opt | int64 | ИД контрагентского (B2B) тарифа
 
 ### OrderStatus / integer
 
