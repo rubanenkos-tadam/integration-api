@@ -53,9 +53,9 @@ options | opt | array / int64 / массив ИД опций заказа
 fixCost | opt | number | Возвращается, только если стоимость была зафиксирована
 paymentMethod | man | string | Тип оплаты. Возможные значения: **"cashless" | "credit_card" | "cash"**. "cashless" - контрагагентский (B2B) заказ.
 comment | opt | string | Комментарий к заказу
-check | opt | CheckItem / json |
-contractorCheck | opt | CheckItem / json |
-estimatedCheck | opt | CheckItem / json |
+check | opt | CheckItem / json | Расшифровка фактического чека
+contractorCheck | opt | CheckItem / json | Расшифровка чека для контрагента
+estimatedCheck | opt | CheckItem / json | Расшифровка предварительного чека
 tariffId | man | int64 | ИД тарифа. В случае, если заказ B2B, то возвращает тариф, по которому работает водитель.
 contractorTariffId | int64 | ИД контрагентского (B2B) тарифа
 
@@ -78,6 +78,12 @@ Value | Description
 3 | Клиентское приложение
 6 | Водитель
 7 | Integration API
+
+### CheckItem / json
+Param  | Man/Opt | Type | Description
+-----  | ------- | ---- | -----------
+title | man | string | Название элемента чека
+cost | man | number | Стоимость
 
 ---
 
