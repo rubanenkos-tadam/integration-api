@@ -11,5 +11,6 @@
 * [Поиск адресов](docs/address_find.md)
 * [Поиск ближайшего адреса по координате](docs/reverse_geocoding.md)
 * [Создание заказа](docs/order_submit.md)
+* [Создание B2B заказа](docs/order_b2b_submit.md)
 * [Отмена заказа](docs/order_cancel.md)
 * [Оценка стоимости заказа](docs/order_estimate.md)
